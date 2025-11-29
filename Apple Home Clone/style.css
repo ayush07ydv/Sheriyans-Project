@@ -1,0 +1,160 @@
+@font-face {
+    font-family: SF Pro Regular;
+    src: url(SF-Pro-Display-Regular.otf);
+}
+@font-face {
+    font-family: SF Pro Thin;
+    src: url(SF-Pro-Display-Thin.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+nav{
+    color: white;
+    display: flex;
+    height: 50px; 
+    background: #181818;
+    font-weight: 100 ;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+    font-family: SF Pro Thin;
+    letter-spacing: 1px;
+}
+h3 i{
+    font-size: 20px;
+}
+h3{
+    font-weight: 100;
+    opacity: 0.8;
+}
+#top-n h6{
+    color: white;
+    font-family: SF Pro Regular;
+    text-align: center;
+    align-content: center;
+    height: 49px;
+    background-color: #1d1d1f;
+    font-size: 16px;
+    word-spacing: 2px;
+    font-weight: 100;
+}
+#dark-bg{
+    color: white;
+    font-size: 30px;
+    font-family: SF Pro Regular;
+    text-align: center;
+    background-image: url(https://www.apple.com/v/home/ci/images/heroes/iphone-17-pro/hero_iphone_17_pro__bknyzxfk2agi_large_2x.jpg);
+    background-size: cover ;
+    background-position: center;
+    padding-top: 60px;
+    height: 645px;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.colored button{
+    color: white;
+    background-color: #0077ed;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.transparent button{
+    color: #0077ed;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px 25px;
+    border: 2px solid #0077ed;
+    border-radius: 30px;
+    font-size: 20px;
+}
+.transparent button:hover{
+    color: #fff;
+    background-color: #0077ed;
+}
+.light-bg{
+    color: #1d1d1f;
+    font-size: 30px;
+    font-family: SF Pro Regular;
+    text-align: center;
+    padding-top: 60px;
+    height: 700px;
+}
+.iphone-air{
+    background-image: url(https://www.apple.com/v/home/ci/images/heroes/iphone-air/hero_iphone_air__0gxyavihpiqu_medium_2x.jpg);
+    background-size: cover ;
+    background-position: center;
+}
+.ipad-air{
+    background-image: url(https://www.apple.com/v/home/ci/images/heroes/ipad-air/hero_ipad_air_avail__c34ycq52exg2_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,auto);
+    gap: 10px;
+}
+.down-bg{
+    color: #1d1d1f;
+    font-size: 20px;
+    font-family: SF Pro Regular;
+    text-align: center;
+    padding-top: 60px;
+    height: 700px;
+}
+.dark-down-bg{
+    color: #fff;
+    font-size: 20px;
+    font-family: SF Pro Regular;
+    text-align: center;
+    padding-top: 60px;
+    height: 700px;
+}
+.airpod{
+    background-image: url(https://www.apple.com/v/home/ci/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.watch{
+    background-image: url(https://www.apple.com/in/home/images/promos/apple-watch-series-11/promo_apple_watch_series_11__b63hxviqvonm_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+img{
+    height: 40px;
+    width: auto;
+}
+.ipad-pro{
+    background-image: url(https://www.apple.com/v/home/ci/images/promos/ipad-pro/promo_ipad_pro__c529dk533k4m_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.macbook-pro{
+    background-image: url(https://www.apple.com/v/home/ci/images/promos/macbook-pro-m5/promo_macbook_pro_m5__gnwzdhijhm6a_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.macbook-air{
+    background-image: url(https://www.apple.com/v/home/ci/images/promos/macbook-air/promo_macbook_air__fqowrtnxewqe_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.trade-in{
+    background-image: url(https://www.apple.com/v/home/ci/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_medium_2x.jpg);
+    background-size: cover;
+    background-position: center;
+}

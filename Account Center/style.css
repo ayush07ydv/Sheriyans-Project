@@ -1,0 +1,74 @@
+@font-face {
+    font-family: AC;
+    src: url(Amore\ Christmas.otf);
+}
+@font-face {
+    font-family: Branch;
+    src: url(Branch.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg ,skyblue, rgb(250, 99, 250) );
+}
+#container{
+    margin: 0px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+    margin-left: 200px;
+}
+main>h1{
+    color: #000;
+    font-size: 60px;
+    font-family: AC;
+    font-weight: 100;
+    text-align: center;
+}
+.card{
+    height: 300px;
+    width: 250px;
+    background-color: #ff7786;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 2px solid;
+}
+.card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 2px solid;
+}
+.card h1{
+    color: #000;
+    font-family: Branch;
+    font-size: 25px;
+    
+}
+.card button{
+    height: 15%;
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 5% ;
+    cursor: pointer;
+    background-color: #ffd058;
+    font-size: 15px;
+    font-weight: 900;
+    border: 2px solid;
+    font-family: Branch;
+}
+.card button:hover{
+    scale: 1.05;
+    background-color: #ffa464;
+    transition: all ease 0.8s;
+}

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: SF;
+    src: url(SF-Pro-Display-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    font-family: SF;
+    font-size: 60px;
+}
+#text-gif{
+    color: transparent;
+    background: url(https://i.gifer.com/embedded/download/6wY.gif);
+    background-clip: text;
+    background-size: cover;
+    background-position: center;
+}
+#text-img{
+    color: transparent;
+    background: url(https://img.freepik.com/free-vector/abstract-modern-background-with-rainbow-flowing-waves-design_1048-14415.jpg?semt=ais_hybrid&w=740&q=80);
+    background-clip: text;
+    background-size: cover;
+    background-position: center;
+}
+#text-stroke{
+    color: transparent;
+    -webkit-text-stroke: white 1px;
+    font-weight: 100;
+}

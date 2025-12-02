@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background-color: var(--background);
+}
+:root{
+    --primary-color: #4aff00;
+    --secondary-color: #00e073;
+    --d-text-color: #c6d8c5;
+    --l-text-color: rgb(64, 64, 64);
+    --accent-color: #0094a2;
+    --background: #000000;
+}
+#center>h1{
+    color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    background-image: linear-gradient(90deg, var(--primary-color) 40%, #ffffff 60%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+#center{
+    text-align: center;
+    
+}
+#centor{
+    margin-top:40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+.container{
+    background-color: rgb(55, 53, 53);
+    height: 300px;
+    width: 250px;
+    margin-left: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    z-index: 1;
+    border: 5px solid #7e7e7e;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255);
+}
+.container img{
+    object-fit: cover;
+    object-position: 0px 0px;
+    height: 100%;
+    width: 250px;
+    border-radius: 10px;
+    
+}
+.card p{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif
+}
+.card{
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent,#adadaddd);
+    top: 100%;
+    position: absolute;
+    
+}
+.card h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+}
+.container:hover .card{
+    top: 60%;
+    transition: all ease 0.9s;
+}
+.spot{
+    height: 100px;
+    width: 100px;
+    background-color: var(--primary-color);
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+    z-index: 0;
+    opacity: 0.7;
+}
+.one{
+    top: 20%;
+    right: 20%;
+    scale: 2;
+}
+.two{
+    bottom: 40%;
+    left: 20%;
+    scale: 3;
+}

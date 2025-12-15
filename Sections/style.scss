@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    background: #000;
+}
+@mixin button-style($bg-color, $area){
+            background-color: $bg-color;
+            grid-area: $area ;
+            border-radius: 20px;
+        }
+main{
+    height: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 0.7fr 0.7fr 0.7fr;
+    grid-template-rows: 1.6fr 1fr;
+    grid-template-areas:"one two two two"
+                        "one three four five";
+    
+    section{
+        &#one{
+            @include button-style(red, one);
+            background: url(https://i.pinimg.com/736x/2c/03/ba/2c03ba639c01794c4f55238a02261501.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        &#two{
+            @include button-style(green, two);
+            background: url(download\ \(1\).jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+        &#three{
+            @include button-style(blue, three);
+            background: url(https://i.pinimg.com/736x/7c/40/9e/7c409e987d58a838b654b7079c52194e.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        &#four{
+            @include button-style(yellow, four);
+            background: url(https://i.pinimg.com/736x/f3/d9/fd/f3d9fd078fc20a7af49341e53ea6b330.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+        &#five{
+            @include button-style(rgb(237, 45, 237), five);
+            background: url(https://i.pinimg.com/1200x/ad/6e/d8/ad6ed893afe1ba8f795af81058c7db61.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}

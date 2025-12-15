@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+
+main {
+  height: 100%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 0.7fr 0.7fr 0.7fr;
+  grid-template-rows: 1.6fr 1fr;
+  grid-template-areas: "one two two two" "one three four five";
+}
+main section#one {
+  background-color: red;
+  grid-area: one;
+  border-radius: 20px;
+  background: url(https://i.pinimg.com/736x/2c/03/ba/2c03ba639c01794c4f55238a02261501.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main section#two {
+  background-color: green;
+  grid-area: two;
+  border-radius: 20px;
+  background: url(download\ \(1\).jpeg);
+  background-position: center;
+  background-size: cover;
+}
+main section#three {
+  background-color: blue;
+  grid-area: three;
+  border-radius: 20px;
+  background: url(https://i.pinimg.com/736x/7c/40/9e/7c409e987d58a838b654b7079c52194e.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main section#four {
+  background-color: yellow;
+  grid-area: four;
+  border-radius: 20px;
+  background: url(https://i.pinimg.com/736x/f3/d9/fd/f3d9fd078fc20a7af49341e53ea6b330.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main section#five {
+  background-color: rgb(237, 45, 237);
+  grid-area: five;
+  border-radius: 20px;
+  background: url(https://i.pinimg.com/1200x/ad/6e/d8/ad6ed893afe1ba8f795af81058c7db61.jpg);
+  background-position: center;
+  background-size: cover;
+}/*# sourceMappingURL=style.css.map */

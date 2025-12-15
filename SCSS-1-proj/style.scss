@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background: #000;
+
+    section{
+        height: 100%;
+        background-color: Blue;
+        flex-grow: 1;
+        border: 2px solid #000;
+        border-radius: 40px;
+        gap: 10px;
+
+        background-size: cover;
+        background-position: center;
+
+        transition: flex-grow 0.8s ease;
+        
+    }
+
+    section:hover{
+        overflow: hidden;
+        flex-grow: 1.6;
+        cursor: pointer;
+    }
+    section:nth-child(1){
+        background-image: url(https://i.pinimg.com/736x/07/0e/49/070e4941c352c07d48dbbbb58f1fb91a.jpg);
+    }
+    section:nth-child(2){
+        background-image: url(https://i.pinimg.com/736x/2c/3d/ec/2c3dec02a37ef4c8de29be8e5e6748b3.jpg);
+    }
+    section:nth-child(3){
+        background-image: url(https://i.pinimg.com/736x/db/16/70/db1670edfb654f9e573f1ce74a373a14.jpg);
+    }
+    section:nth-child(4){
+        background-image: url(https://i.pinimg.com/736x/09/d2/b9/09d2b9f1e452f54a8260de445120cc76.jpg);
+    }
+    section:nth-child(5){
+        background-image: url(https://i.pinimg.com/736x/06/20/50/062050be4290aee5b993f8756ec99fcd.jpg);
+    }
+}
